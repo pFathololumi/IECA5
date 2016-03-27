@@ -8,26 +8,8 @@
     </head>
     <body>
 
-        <div class="col-2 menu sidebar">
-            <ul>
-                <div class="swap-image">
-                    <div class="container">
-                        <img class="swap-image1" src="style/image2.jpg" alt="" />
-                    </div> 
-                    <div class="container">
-                        <img class="swap-image2" src="style/image1.jpg" alt="" />
-                    </div>
-                </div>
-            </ul>
-            <ul>
-                <a href="examples.html"><li>وضعیت بازار</li></a>
-                <a href="#"><li>اضافه کردن کاربر</li></a>
-                <a href="#"><li>مدیریت کاربران</li></a>
-                <a href="#"><li>مدیریت سهام</li></a>
-                <a href="buy.html"><li>خرید سهام</li></a>
-                <a href="sell.html"><li>فروش سهام</li></a>
-            </ul>
-        </div>
+      <jsp:include page="/menu.jsp" />
+
         <div class="contex">
             <div class="header">
                 <h1>لیست سهام های موجود</h1>
@@ -129,10 +111,7 @@
                     </a>
                 </div>
             </div>
-            <div class="footer">
-                <div>کلیه حقوق این سایت واس ماس</div>
-                <div class="qrCode"><img src="style/qrcode.jpg" /></div>
-            </div>
+            <jsp:include page="/footer.jsp" /> 
         </div>   
     </body>
 </html>

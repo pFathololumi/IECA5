@@ -1,0 +1,143 @@
+package main.java.net.internetengineering.domain.dealing;
+
+import main.java.net.internetengineering.domain.dealing.types.ITypeExecutor;
+import main.java.net.internetengineering.server.StockMarket;
+
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+
+/**
+ * Created by Hamed Ara on 2/18/2016.
+ */
+public class Instrument {
+    private String symbol;
+    private Long quantity;
+    private List<SellingOffer> sellingOffers;
+    private List<BuyingOffer> buyingOffers;
+
+	public Instrument(String symbol,Long quantity) {
+        this.symbol = symbol;
+        this.quantity = quantity;
+        this.sellingOffers = new ArrayList<SellingOffer>();
+        this.buyingOffers = new ArrayList<BuyingOffer>();
+    }
+
+    public void executeSellingByType(PrintWriter out, SellingOffer offer){
+		try {
+			Class clazz = Class.forName("domain.dealing.types."+offer.getType());
+			Object obj= clazz.newInstance();
+			if(obj instanceof ITypeExecutor){
+				((ITypeExecutor)obj).sellingExecute(out,offer,sellingOffers,buyingOffers,symbol);
+			}
+		}catch (ClassNotFoundException ex){
+			out.println("Invalid type");
+			return;
+		}catch (IllegalAccessException ex){
+			out.println("Invalid type");
+			return;
+		}catch (InstantiationException ex){
+			out.println("Invalid type");
+			return;
+		}
+        
+    }
+
+	public void executeBuyingByType(PrintWriter out, BuyingOffer offer){
+		try {
+			Class clazz = Class.forName("domain.dealing.types."+offer.getType());
+			Object obj= clazz.newInstance();
+			if(obj instanceof ITypeExecutor){
+				((ITypeExecutor)obj).buyingExecute(out,offer,sellingOffers,buyingOffers,symbol);
+			}
+		}catch (ClassNotFoundException ex){
+			out.println("Invalid type");
+			return;
+		}catch (IllegalAccessException ex){
+			out.println("Invalid type");
+			return;
+		}catch (InstantiationException ex){
+			out.println("Invalid type");
+			return;
+		}
+
+    }
+
+
+	public static void matchingOffers(PrintWriter out,Boolean basedOnBuyerPrice,
+			List<SellingOffer> sellingOffers,List<BuyingOffer>buyingOffers,String symbol){
+
+    	SellingOffer sellingOffer = sellingOffers.get(0);
+    	BuyingOffer buyingOffer = buyingOffers.get(0);
+
+    	if(sellingOffer.getPrice() > buyingOffer.getPrice()){
+    		out.println("Order is queued");
+    		return;
+    	}
+
+    	while(true){
+	    	if(sellingOffer.getPrice() <= buyingOffer.getPrice()){
+	    		Long buyPrice = basedOnBuyerPrice? buyingOffer.getPrice():sellingOffer.getPrice();
+	    		Long buyQuantity = (long) 0 ;
+	    		if(buyingOffer.getQuantity() < sellingOffer.getQuantity()){
+	    			buyQuantity = buyingOffer.getQuantity();
+	    			buyingOffers.remove(0);
+	    			sellingOffer.setQuantity("delete", buyQuantity);
+	    			sellingOffers.set(0, sellingOffer);
+					if(sellingOffer.getQuantity()==0L){
+						sellingOffers.remove(0);
+					}
+	    		}
+	    		else{
+	    			buyQuantity = sellingOffer.getQuantity();
+	    			sellingOffers.remove(0);
+	    			buyingOffer.setQuantity("delete", buyQuantity);
+	    			buyingOffers.set(0, buyingOffer);
+					if(buyingOffer.getQuantity()==0L){
+						buyingOffers.remove(0);
+					}
+	    		}
+	    		StockMarket.changeCustomerProperty(sellingOffer, buyingOffer, buyPrice, buyQuantity, symbol);
+	    		out.println(sellingOffer.getID()+" sold "+buyQuantity+" shares of "+symbol+" @"+buyPrice+" to "+buyingOffer.getID());
+	    	}else
+				break;
+	    	if(!sellingOffers.isEmpty()&&!buyingOffers.isEmpty()) {
+				sellingOffer = sellingOffers.get(0);
+				buyingOffer = buyingOffers.get(0);
+			}else
+				break;
+    	}
+    }
+
+    public static void sortOfferingListByPrice(List<? extends Offering> offers){
+        Collections.sort(offers, new Comparator<Offering>() {
+            @Override
+            public int compare(Offering o1, Offering o2) {
+                return o1.getPrice()>o2.getPrice()?1:-1;
+            }
+        });
+//		return offers;
+    }
+
+
+    public Boolean symbolIsMatched(String symbol){
+        return symbol.equals(symbol);
+    }
+    
+    public Boolean HasQuantity(Long count){
+    	if(count <= this.quantity)
+    		return true;
+    	return false;
+    }
+    
+    public void changeQuantity(String type,Long count){
+    	if(type.equals("add"))
+    		this.quantity += count;
+    	else if(type.equals("delete") && HasQuantity(count))
+    		this.quantity -= count;
+    }
+    
+}

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style/myStyle.css" />
@@ -18,9 +18,9 @@
 </head>
 <body>
 
-	<jsp:include page="/menu.jsp" />
-	<jsp:include page="/header.jsp" />
-	<jsp:include page="/footer.jsp" />
-    
+        <div class="header2">
+
+        </div>
+	
 </body>
 </html>

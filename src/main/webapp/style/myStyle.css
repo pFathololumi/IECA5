@@ -87,8 +87,9 @@ li{
     border-radius: 5px;
 }
 .contex {
-    float:left;
-    width: 86%;
+        width: 86%;
+        /*position: absolute;
+        bottom:0%;*/
 }
 .passage {
     padding-top: 10%;
