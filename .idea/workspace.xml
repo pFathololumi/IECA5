@@ -7,142 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fba5553-5e87-4dd5-b4e9-668a1610848b" name="Default" comment="Parisa's work is added to projects. Both Sell and Buy are in the same form and include in jsp is used.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.jms.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.resource.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/Account.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/Customer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/BuyingOffer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/Instrument$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/Instrument.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/Offering.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/SellingOffer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/TransactionType.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/types/GTC.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/types/IOC.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/types/ITypeExecutor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/types/MPO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/exception/DataIllegalException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/logger/MyLogger.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/myServiceHandlers/BuyOrder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/myServiceHandlers/SellOrder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/server/StockMarket.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/Account.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/Customer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/BuyingOffer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/Instrument$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/Instrument.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/Offering.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/SellingOffer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/TransactionType.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/types/GTC.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/types/IOC.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/types/ITypeExecutor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/types/MPO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/exception/DataIllegalException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/logger/MyLogger.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/myServiceHandlers/BuyOrder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/myServiceHandlers/SellOrder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/server/StockMarket.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/BBardiya.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/BBardiya.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/BBardiya.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/image1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/image2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/qrcode.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/symbol/aftabe.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/symbol/irankhodro.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/symbol/saipa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/symbol/sepahan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/symbol/tractor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build&amp;deploy.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clean.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/examples.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/animated.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/form-elements.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/save-poll-err.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/myStyle.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/IECA5_war/IECA5_war.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/IECA5_war_exploded/WEB-INF/classes/ir/ramtung/polling/Poll.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/IECA5_war_exploded/WEB-INF/classes/ir/ramtung/polling/PollRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/IECA5_war_exploded/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/IECA5_war_exploded/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/IECA5_war_exploded/poll-form.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/IECA5_war_exploded/poll-list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/IECA5_war_exploded/save-poll.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/IECA5_war_exploded/save-vote.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/IECA5_war_exploded/vote-form.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/IECA5_war_exploded/vote-result.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IECA5/ir/ramtung/polling/Poll.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IECA5/ir/ramtung/polling/PollRepository.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IECA5.iml" afterPath="$PROJECT_DIR$/IECA5.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/addUser.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/buy.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/deposit.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/selectBuyOrSell.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/Instrument.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/Instrument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/server/StockMarket.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/server/StockMarket.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/form/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/form/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/buy&amp;sell.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/buy&amp;sell.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/examples.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/examples.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/menu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/menu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/style/myStyle.css" afterPath="$PROJECT_DIR$/src/main/webapp/style/myStyle.css" />
     </list>
     <ignored path="IECA5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -168,8 +45,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12208258">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.61041296">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -310,7 +187,6 @@
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/types/MPO.java" />
         <option value="$PROJECT_DIR$/src/test/java/ir/ramtung/polling/PollRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ir/ramtung/polling/PollTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java" />
         <option value="$PROJECT_DIR$/src/index.jsp" />
@@ -322,6 +198,7 @@
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/Instrument.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/server/StockMarket.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/queues.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -1067,7 +944,7 @@
       <workItem from="1459144390130" duration="9373000" />
       <workItem from="1459228158273" duration="9637000" />
       <workItem from="1460020274560" duration="3728000" />
-      <workItem from="1460024814521" duration="3744000" />
+      <workItem from="1460024814521" duration="4108000" />
     </task>
     <task id="LOCAL-00001" summary="Previous Project on JSP files">
       <created>1458676664431</created>
@@ -1091,7 +968,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46055000" />
+    <option name="totallyTimeSpent" value="46419000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1607,8 +1484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12208258">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.61041296">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding />
         </state>
       </provider>
