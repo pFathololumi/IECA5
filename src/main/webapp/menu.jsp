@@ -31,7 +31,7 @@
             <a href="#"><li>مدیریت سهام</li></a>
             <a href="buy&sell.jsp"><li>خرید و فروش سهام</li></a>
 			<a href="deposit.jsp"><li>افزایش اعتبار</li></a>
-            
+            <a href="queues.jsp"><li>نمایش صفوف</li></a>
 
         </ul>
     </div>
