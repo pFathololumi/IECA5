@@ -23,7 +23,7 @@ public class MPO implements ITypeExecutor {
 		offer.setPrice(0L);
 		sellingOffers.add(offer);
     	Instrument.sortOfferingListByPrice(sellingOffers);
-    	Instrument.matchingOffers(out,true,sellingOffers,buyingOffers,symbol);
+    	Instrument.matchingOffers(out,true,sellingOffers,buyingOffers,symbol,this.getClass().getName());
 	}
 
 	@Override
@@ -39,7 +39,7 @@ public class MPO implements ITypeExecutor {
 		offer.setPrice(Long.MAX_VALUE);
     	buyingOffers.add(offer);
     	Instrument.sortOfferingListByPrice(buyingOffers);
-    	Instrument.matchingOffers(out,false,sellingOffers,buyingOffers,symbol);
+    	Instrument.matchingOffers(out,false,sellingOffers,buyingOffers,symbol,this.getClass().getName());
 	}
 
 }

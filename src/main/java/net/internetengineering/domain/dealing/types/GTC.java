@@ -16,7 +16,7 @@ public class GTC implements ITypeExecutor {
 		if (buyingOffers.isEmpty())
 			out.println("Order is queued");
 		else
-			Instrument.matchingOffers(out, true,sellingOffers,buyingOffers,symbol);
+			Instrument.matchingOffers(out, true,sellingOffers,buyingOffers,symbol,this.getClass().getName());
 	}
 
 	@Override
@@ -26,7 +26,7 @@ public class GTC implements ITypeExecutor {
 		if (sellingOffers.isEmpty())
 			out.println("Order is queued");
 		else
-			Instrument.matchingOffers(out, true,sellingOffers,buyingOffers,symbol);
+			Instrument.matchingOffers(out, true,sellingOffers,buyingOffers,symbol,this.getClass().getName());
 	}
 
 	

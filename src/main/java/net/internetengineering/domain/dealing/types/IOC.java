@@ -1,7 +1,10 @@
 package main.java.net.internetengineering.domain.dealing.types;
 
+import main.java.net.internetengineering.domain.Customer;
+import main.java.net.internetengineering.domain.Transaction;
 import main.java.net.internetengineering.domain.dealing.BuyingOffer;
 import main.java.net.internetengineering.domain.dealing.SellingOffer;
+import main.java.net.internetengineering.logger.CSVFileWriter;
 import main.java.net.internetengineering.server.StockMarket;
 
 import java.io.PrintWriter;
@@ -33,6 +36,13 @@ public class IOC implements ITypeExecutor {
 				if(buyingOffers.get(0).getQuantity() <= offer.getQuantity()){
 					buyQuantity = buyingOffers.get(0).getQuantity();
 					StockMarket.changeCustomerProperty(offer, buyingOffers.get(0), buyPrice, buyQuantity, symbol);
+
+					Customer seller = StockMarket.getInstance().getCustomer(offer.getID());
+					Customer buyer = StockMarket.getInstance().getCustomer(buyingOffers.get(0).getID());
+					Transaction t = new Transaction(buyer.getId(),seller.getId(),symbol,this.getClass().getName(),String.valueOf(buyQuantity),String.valueOf(buyer.getMoney()),
+							String.valueOf(seller.getMoney()));
+					CSVFileWriter.writeCsvFile(t);
+
 					out.println(offer.getID()+" sold "+buyQuantity+" shares of "+symbol+" @"+buyPrice+" to "+buyingOffers.get(0).getID()+"\n");
 					buyingOffers.remove(0);
 					offer.setQuantity("delete", buyQuantity);
@@ -43,6 +53,13 @@ public class IOC implements ITypeExecutor {
 					buyingOffers.get(0).setQuantity("delete", buyQuantity);
 					//buyingOffers.set(0, buyingOffers.get(0));
 					StockMarket.changeCustomerProperty(offer, buyingOffers.get(0), buyPrice, buyQuantity, symbol);
+
+					Customer seller = StockMarket.getInstance().getCustomer(offer.getID());
+					Customer buyer = StockMarket.getInstance().getCustomer(buyingOffers.get(0).getID());
+					Transaction t = new Transaction(buyer.getId(),seller.getId(),symbol,this.getClass().getName(),String.valueOf(buyQuantity),String.valueOf(buyer.getMoney()),
+							String.valueOf(seller.getMoney()));
+					CSVFileWriter.writeCsvFile(t);
+
 					out.println(offer.getID()+" sold "+buyQuantity+" shares of "+symbol+" @"+buyPrice+" to "+buyingOffers.get(0).getID()+"\n");
 					break;
 				}

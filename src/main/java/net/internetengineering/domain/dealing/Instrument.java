@@ -1,6 +1,9 @@
 package main.java.net.internetengineering.domain.dealing;
 
+import main.java.net.internetengineering.domain.Customer;
+import main.java.net.internetengineering.domain.Transaction;
 import main.java.net.internetengineering.domain.dealing.types.ITypeExecutor;
+import main.java.net.internetengineering.logger.CSVFileWriter;
 import main.java.net.internetengineering.server.StockMarket;
 
 import java.io.PrintWriter;
@@ -104,7 +107,7 @@ public class Instrument {
 
 
 	public static void matchingOffers(PrintWriter out,Boolean basedOnBuyerPrice,
-			List<SellingOffer> sellingOffers,List<BuyingOffer>buyingOffers,String symbol){
+			List<SellingOffer> sellingOffers,List<BuyingOffer>buyingOffers,String symbol,String type){
 
     	SellingOffer sellingOffer = sellingOffers.get(0);
     	BuyingOffer buyingOffer = buyingOffers.get(0);
@@ -137,6 +140,11 @@ public class Instrument {
 					}
 	    		}
 	    		StockMarket.changeCustomerProperty(sellingOffer, buyingOffer, buyPrice, buyQuantity, symbol);
+				Customer seller = StockMarket.getInstance().getCustomer(sellingOffer.getID());
+				Customer buyer = StockMarket.getInstance().getCustomer(buyingOffer.getID());
+				Transaction t = new Transaction(buyer.getId(),seller.getId(),symbol,type,String.valueOf(buyQuantity),String.valueOf(buyer.getMoney()),
+						String.valueOf(seller.getMoney()));
+				CSVFileWriter.writeCsvFile(t);
 	    		out.println(sellingOffer.getID()+" sold "+buyQuantity+" shares of "+symbol+" @"+buyPrice+" to "+buyingOffer.getID());
 	    	}else
 				break;

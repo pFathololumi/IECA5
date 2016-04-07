@@ -126,6 +126,10 @@ public class StockMarket {
             return true;
     }
 
+    public Customer getCustomer(String id){
+        return customers.get(id);
+    }
+
     private Instrument getSymbol(String inst){
         for(Instrument instrument : instruments)
             if( instrument.symbolIsMatched(inst))
