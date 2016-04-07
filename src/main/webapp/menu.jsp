@@ -25,11 +25,12 @@
             </div>
         </ul>
         <ul>
-            <a href="examples.html"><li>وضعیت بازار</li></a>
-            <a href="#"><li>اضافه کردن کاربر</li></a>
+            <a href="examples.jsp"><li>وضعیت بازار</li></a>
+            <a href="addUser.jsp"><li>اضافه کردن کاربر</li></a>
             <a href="#"><li>مدیریت کاربران</li></a>
             <a href="#"><li>مدیریت سهام</li></a>
-            <a href="buy.html"><li>خرید و فروشس سهام</li></a>
+            <a href="buy&sell.jsp"><li>خرید و فروش سهام</li></a>
+			<a href="deposit.jsp"><li>افزایش اعتبار</li></a>
             
 
         </ul>
