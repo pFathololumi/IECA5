@@ -130,3 +130,24 @@ img { max-width: 100%; }
 .form-bottom form .input-error {
 	border-color: #66d6c5;
 }
+.right-to-left{
+	direction: rtl;
+	text-align: right;
+}
+.width-percent{
+	width: 70%;
+	margin-left:5%;
+	margin-top: 2%;
+	margin-bottom: 5%;
+
+}
+
+.inline-style{
+	display: inline;
+	margin: 1%;
+}
+
+.no-padding-component{
+	padding: 0;
+	margin-bottom: 1%;
+}

@@ -132,8 +132,20 @@ public class StockMarket {
                 return instrument;
         return null;
     }
+    public void initializeInstruments(){
+        Instrument ins1 = new Instrument("Peugeot",242L);
+        ins1.initialOfferLists();
+        instruments.add(ins1);
+        ins1 = new Instrument("Renault",8585L);
+        ins1.initialOfferLists();
+        instruments.add(ins1);
+    }
 
-    public static void changeCustomerProperty(SellingOffer sOffer,BuyingOffer bOffer,Long price,Long count,String symbol){
+    public List<Instrument> getInstruments() {
+        return instruments;
+    }
+
+    public static void changeCustomerProperty(SellingOffer sOffer, BuyingOffer bOffer, Long price, Long count, String symbol){
         Customer seller = customers.get(sOffer.getID());
         Customer buyer = customers.get(bOffer.getID());
 

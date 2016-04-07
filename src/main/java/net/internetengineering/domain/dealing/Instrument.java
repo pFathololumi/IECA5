@@ -26,6 +26,42 @@ public class Instrument {
         this.buyingOffers = new ArrayList<BuyingOffer>();
     }
 
+	public String getSymbol() {
+
+		return symbol;
+	}
+
+	public Long getQuantity() {
+		return quantity;
+	}
+
+	public List<SellingOffer> getSellingOffers() {
+		return sellingOffers;
+	}
+
+	public List<BuyingOffer> getBuyingOffers() {
+		return buyingOffers;
+	}
+
+	public void initialOfferLists(){
+		initialBuyingOfferList();
+		initialSellingOfferList();
+	}
+
+	private void initialBuyingOfferList(){
+		BuyingOffer b = new BuyingOffer(440L,55L,"KQL","45");
+		buyingOffers.add(b);
+		b=new BuyingOffer(44L,56L,"ZDF","85");
+		buyingOffers.add(b);
+	}
+
+	private void initialSellingOfferList(){
+		SellingOffer s = new SellingOffer(220L,130L,"GTC","12");
+		sellingOffers.add(s);
+		s = new SellingOffer(22L,13L,"MTF","11");
+		sellingOffers.add(s);
+	}
+
     public void executeSellingByType(PrintWriter out, SellingOffer offer){
 		try {
 			Class clazz = Class.forName("domain.dealing.types."+offer.getType());
