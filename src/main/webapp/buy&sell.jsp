@@ -42,7 +42,7 @@
                                     </div>
                                 </div>
                                 <div class="form-bottom">
-                                    <form role="form" class="registration-form" action="selectBuyOrSell.jsp" method="post">
+                                    <form role="form" class="registration-form" action="/stockmarket/transaction" method="POST">
                                         <div class="form-group">
                                             <label class="sr-only">شناسه کاربری</label>
                                             <input type="text" name="id" placeholder="...شناسه کاربری" class="form-control">
@@ -63,29 +63,14 @@
                                             <label class="sr-only">نوع درخواست</label>
                                             <input type="text" name="type" placeholder="...نوع درخواست" class="form-control">
                                         </div>
-										<div class="form-row">
-										
-										<div class="form-radio-buttons">
-
-										 <div>
-											<label>
-												<input type="radio" name="radio" value="buy">
-												<span>خرید</span>
-											</label>
-										</div>
-
-										<div>
-											<label>
-												<input type="radio" name="radio" value="sell">
-												<span>فروش</span>
-											</label>
-										</div>
-
-										</div>
-
-										
-										</div>
-
+                                        <div class="form-row">
+                                            <label>
+                                                <select name="order">
+                                                    <option>خرید</option>
+                                                    <option>فروش</option>
+                                                </select>
+                                            </label>
+                                        </div>
                                         <button type="submit" class="btn">ارسال درخواست</button>
                                     </form>
                                 </div>

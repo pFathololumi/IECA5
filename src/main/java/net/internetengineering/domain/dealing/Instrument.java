@@ -2,6 +2,7 @@ package main.java.net.internetengineering.domain.dealing;
 
 import main.java.net.internetengineering.domain.Customer;
 import main.java.net.internetengineering.domain.Transaction;
+import main.java.net.internetengineering.domain.dealing.types.GTC;
 import main.java.net.internetengineering.domain.dealing.types.ITypeExecutor;
 import main.java.net.internetengineering.logger.CSVFileWriter;
 import main.java.net.internetengineering.server.StockMarket;
@@ -67,7 +68,8 @@ public class Instrument {
 
     public void executeSellingByType(PrintWriter out, SellingOffer offer){
 		try {
-			Class clazz = Class.forName("domain.dealing.types."+offer.getType());
+			System.out.println( GTC.class.getName());
+			Class clazz = Class.forName("main.java.net.internetengineering.domain.dealing.types."+offer.getType());
 			Object obj= clazz.newInstance();
 			if(obj instanceof ITypeExecutor){
 				((ITypeExecutor)obj).sellingExecute(out,offer,sellingOffers,buyingOffers,symbol);
