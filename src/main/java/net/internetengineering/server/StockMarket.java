@@ -17,10 +17,12 @@ public class StockMarket {
     private static StockMarket stockMarket=null;
     private static List<Instrument> instruments;
     private static HashMap<String, Customer> customers;
+    private static HashMap<String, String> depositRequests;
 
     private StockMarket(){
         instruments = new ArrayList<Instrument>();
         customers = new HashMap<String, Customer>();
+        depositRequests = new HashMap<String, String>();
     }
 
     public static StockMarket getInstance(){
@@ -147,6 +149,14 @@ public class StockMarket {
 
     public List<Instrument> getInstruments() {
         return instruments;
+    }
+
+    public HashMap<String, String> getDepositRequests(){
+        return depositRequests;
+    }
+
+    public void setDepositRequest(String id, String amount){
+        depositRequests.put(id, amount);
     }
 
     public static void changeCustomerProperty(SellingOffer sOffer, BuyingOffer bOffer, Long price, Long count, String symbol){
