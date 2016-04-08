@@ -42,7 +42,7 @@
                                     </div>
                                 </div>
                                 <div class="form-bottom">
-                                    <form role="form" class="registration-form" action="selectBuyOrSell.jsp" method="post">
+                                    <form role="form" class="registration-form" action="/stockmarket/deposit" method="post">
                                         <div class="form-group">
                                             <label class="sr-only">شناسه کاربری</label>
                                             <input type="text" name="id" placeholder="...شناسه کاربری" class="form-control">
