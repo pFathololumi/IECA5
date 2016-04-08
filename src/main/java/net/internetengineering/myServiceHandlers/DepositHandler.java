@@ -33,6 +33,8 @@ public class DepositHandler extends MyHttpServlet{
 		else {
 			out.println("Unknown user id");
 		}
+
+		StockMarket.getInstance().getDepositRequests().remove(id);
 	}
 	
 
