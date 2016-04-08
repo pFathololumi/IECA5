@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ page import="main.java.net.internetengineering.server.StockMarket" %>
+<%@ page import="main.java.net.internetengineering.domain.Customer" %>
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style/myStyle.css" />
@@ -17,7 +19,10 @@
     <link rel="stylesheet" href="form/style.css">
 </head>
 <body>
-
+<%
+    if(!StockMarket.getInstance().containCustomer("1"))
+        StockMarket.getInstance().addNewCustomer(new Customer("1","admin","admin"));
+%>
 	<jsp:include page="/menu.jsp" />
 	<jsp:include page="/header.jsp" />
     <div id="stuffer">به سایت خرید و فروش سهام خوش آمدید.</div>

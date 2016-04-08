@@ -5,7 +5,6 @@ import main.java.net.internetengineering.domain.dealing.*;
 import main.java.net.internetengineering.exception.DataIllegalException;
 import main.java.net.internetengineering.logger.MyLogger;
 
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -45,49 +44,33 @@ public class StockMarket {
         return customers.get(id).hasEnoughMoney(amount);
     }
 
-    public void executeSellingOffer(PrintWriter out, SellingOffer offer, String symbol){
-        try {
-            if(offer.isAdminOffer())
-                addOrUpdateInstrumentByAdmin(out,symbol,offer);
-                Instrument instrument = loadVerifiedParameters(offer,symbol);
-                
-                Customer customer = customers.get(offer.getID());
-                if(!customer.hasEnoughStock(symbol, offer) && !offer.isAdminOffer()){
-                	out.println("Not enough share");
-                    MyLogger.info("ID '"+offer.getID()+"' don't have enough share for symbol '"+symbol);
-                    return;
-                }
-                
-                instrument.executeSellingByType(out,offer);
+    public void executeSellingOffer(MyLogger logger, SellingOffer offer, String symbol) throws DataIllegalException{
+        if(offer.isAdminOffer())
+            addOrUpdateInstrumentByAdmin(symbol,offer);
+            Instrument instrument = loadVerifiedParameters(offer,symbol);
 
-        } catch (DataIllegalException e) {
-            out.println(e.getMessage());
-            MyLogger.info(e.getMessage());
-            return;
-        }
-    }
-
-    public void executeBuyingOffer(PrintWriter out, BuyingOffer offer, String symbol){
-        try {
             Customer customer = customers.get(offer.getID());
-            if(!customer.hasEnoughMoney(offer.getPrice() * offer.getQuantity())){
-                out.println("Not enough money");
-                return;
+            if(!customer.hasEnoughStock(symbol, offer) && !offer.isAdminOffer()){
+                throw new DataIllegalException("Not enough share");
             }
-            if(offer.isAdminOffer())
-                deleteOrUpdateInstrumentByAdmin(out,symbol,offer);
-            else
-                customer.executeTransaction(TransactionType.WITHDRAW, offer.getPrice()*offer.getQuantity());
-            Instrument instrument = loadVerifiedParameters(offer, symbol);
-            instrument.executeBuyingByType(out, offer);
 
-        } catch (DataIllegalException e) {
-            out.println(e.getMessage());
-            return;
-        }
+            instrument.executeSellingByType(logger,offer);
     }
 
-    private void addOrUpdateInstrumentByAdmin(PrintWriter out,String symbol,Offering offer) {
+    public void executeBuyingOffer(MyLogger logger, BuyingOffer offer, String symbol) throws DataIllegalException{
+        Customer customer = customers.get(offer.getID());
+        if(!customer.hasEnoughMoney(offer.getPrice() * offer.getQuantity())){
+            throw  new DataIllegalException("Not enough money");
+        }
+        if(offer.isAdminOffer())
+            deleteOrUpdateInstrumentByAdmin(symbol,offer);
+        else
+            customer.executeTransaction(TransactionType.WITHDRAW, offer.getPrice()*offer.getQuantity());
+        Instrument instrument = loadVerifiedParameters(offer, symbol);
+        instrument.executeBuyingByType(logger, offer);
+    }
+
+    private void addOrUpdateInstrumentByAdmin(String symbol,Offering offer) {
     	boolean flag = false;
     	for(Instrument i : instruments){
 			if(i.symbolIsMatched(symbol)){
@@ -99,7 +82,7 @@ public class StockMarket {
     	if(!flag)
     		instruments.add(new Instrument(symbol, offer.getQuantity()));
     }
-    private void deleteOrUpdateInstrumentByAdmin(PrintWriter out,String symbol,Offering offer) {
+    private void deleteOrUpdateInstrumentByAdmin(String symbol,Offering offer) {
     	for(Instrument i : instruments){
 			if(i.symbolIsMatched(symbol)){
 				i.changeQuantity("delete", offer.getQuantity());

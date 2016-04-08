@@ -4,10 +4,11 @@ import main.java.net.internetengineering.domain.Customer;
 import main.java.net.internetengineering.domain.Transaction;
 import main.java.net.internetengineering.domain.dealing.types.GTC;
 import main.java.net.internetengineering.domain.dealing.types.ITypeExecutor;
+import main.java.net.internetengineering.exception.DataIllegalException;
 import main.java.net.internetengineering.logger.CSVFileWriter;
+import main.java.net.internetengineering.logger.MyLogger;
 import main.java.net.internetengineering.server.StockMarket;
 
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -66,56 +67,50 @@ public class Instrument {
 		sellingOffers.add(s);
 	}
 
-    public void executeSellingByType(PrintWriter out, SellingOffer offer){
+    public void executeSellingByType(MyLogger logger, SellingOffer offer) throws DataIllegalException {
 		try {
 			System.out.println( GTC.class.getName());
 			Class clazz = Class.forName("main.java.net.internetengineering.domain.dealing.types."+offer.getType());
 			Object obj= clazz.newInstance();
 			if(obj instanceof ITypeExecutor){
-				((ITypeExecutor)obj).sellingExecute(out,offer,sellingOffers,buyingOffers,symbol);
+				((ITypeExecutor)obj).sellingExecute(logger,offer,sellingOffers,buyingOffers,symbol);
 			}
 		}catch (ClassNotFoundException ex){
-			out.println("Invalid type");
-			return;
+			throw new DataIllegalException("Invalid type");
 		}catch (IllegalAccessException ex){
-			out.println("Invalid type");
-			return;
+			throw new DataIllegalException("Invalid type");
 		}catch (InstantiationException ex){
-			out.println("Invalid type");
-			return;
+			throw new DataIllegalException("Invalid type");
 		}
         
     }
 
-	public void executeBuyingByType(PrintWriter out, BuyingOffer offer){
+	public void executeBuyingByType(MyLogger logger, BuyingOffer offer) throws DataIllegalException {
 		try {
 			Class clazz = Class.forName("domain.dealing.types."+offer.getType());
 			Object obj= clazz.newInstance();
 			if(obj instanceof ITypeExecutor){
-				((ITypeExecutor)obj).buyingExecute(out,offer,sellingOffers,buyingOffers,symbol);
+				((ITypeExecutor)obj).buyingExecute(logger,offer,sellingOffers,buyingOffers,symbol);
 			}
 		}catch (ClassNotFoundException ex){
-			out.println("Invalid type");
-			return;
+			throw new DataIllegalException("Invalid type");
 		}catch (IllegalAccessException ex){
-			out.println("Invalid type");
-			return;
+			throw new DataIllegalException("Invalid type");
 		}catch (InstantiationException ex){
-			out.println("Invalid type");
-			return;
+			throw new DataIllegalException("Invalid type");
 		}
 
     }
 
 
-	public static void matchingOffers(PrintWriter out,Boolean basedOnBuyerPrice,
+	public static void matchingOffers(MyLogger logger,Boolean basedOnBuyerPrice,
 			List<SellingOffer> sellingOffers,List<BuyingOffer>buyingOffers,String symbol,String type){
 
     	SellingOffer sellingOffer = sellingOffers.get(0);
     	BuyingOffer buyingOffer = buyingOffers.get(0);
 
     	if(sellingOffer.getPrice() > buyingOffer.getPrice()){
-    		out.println("Order is queued");
+    		logger.info("Order is queued");
     		return;
     	}
 
@@ -147,7 +142,7 @@ public class Instrument {
 				Transaction t = new Transaction(buyer.getId(),seller.getId(),symbol,type,String.valueOf(buyQuantity),String.valueOf(buyer.getMoney()),
 						String.valueOf(seller.getMoney()));
 				CSVFileWriter.writeCsvFile(t);
-	    		out.println(sellingOffer.getID()+" sold "+buyQuantity+" shares of "+symbol+" @"+buyPrice+" to "+buyingOffer.getID());
+	    		logger.info(sellingOffer.getID()+" sold "+buyQuantity+" shares of "+symbol+" @"+buyPrice+" to "+buyingOffer.getID());
 	    	}else
 				break;
 	    	if(!sellingOffers.isEmpty()&&!buyingOffers.isEmpty()) {

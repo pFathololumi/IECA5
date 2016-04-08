@@ -203,3 +203,9 @@ li{
     margin: 10%;
     font-family: BBardiya;
 }
+.error-content{
+    color: red;
+}
+.success-content{
+    color: green;
+}

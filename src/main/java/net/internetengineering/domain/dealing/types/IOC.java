@@ -5,18 +5,18 @@ import main.java.net.internetengineering.domain.Transaction;
 import main.java.net.internetengineering.domain.dealing.BuyingOffer;
 import main.java.net.internetengineering.domain.dealing.SellingOffer;
 import main.java.net.internetengineering.logger.CSVFileWriter;
+import main.java.net.internetengineering.logger.MyLogger;
 import main.java.net.internetengineering.server.StockMarket;
 
-import java.io.PrintWriter;
 import java.util.List;
 
 
 public class IOC implements ITypeExecutor {
 
 	@Override
-	public void sellingExecute(PrintWriter out, SellingOffer offer, List<SellingOffer> sellingOffers, List<BuyingOffer> buyingOffers, String symbol) {
+	public void sellingExecute(MyLogger logger, SellingOffer offer, List<SellingOffer> sellingOffers, List<BuyingOffer> buyingOffers, String symbol) {
 		if(buyingOffers.isEmpty()){
-			out.println("Order is declined");
+			logger.info("Order is declined");
 			return;
 		}
 		Long count = offer.getQuantity();
@@ -26,7 +26,7 @@ public class IOC implements ITypeExecutor {
 			count -= buyingOffers.get(i).getQuantity();
 		}
 		if(count > 0){
-			out.println("Order is declined");
+			logger.info("Order is declined");
 			return;
 		}
 		else{
@@ -43,7 +43,7 @@ public class IOC implements ITypeExecutor {
 							String.valueOf(seller.getMoney()));
 					CSVFileWriter.writeCsvFile(t);
 
-					out.println(offer.getID()+" sold "+buyQuantity+" shares of "+symbol+" @"+buyPrice+" to "+buyingOffers.get(0).getID()+"\n");
+					logger.info(offer.getID()+" sold "+buyQuantity+" shares of "+symbol+" @"+buyPrice+" to "+buyingOffers.get(0).getID()+"\n");
 					buyingOffers.remove(0);
 					offer.setQuantity("delete", buyQuantity);
 					//sellingOffers.set(0, offer);
@@ -60,7 +60,7 @@ public class IOC implements ITypeExecutor {
 							String.valueOf(seller.getMoney()));
 					CSVFileWriter.writeCsvFile(t);
 
-					out.println(offer.getID()+" sold "+buyQuantity+" shares of "+symbol+" @"+buyPrice+" to "+buyingOffers.get(0).getID()+"\n");
+					logger.info(offer.getID()+" sold "+buyQuantity+" shares of "+symbol+" @"+buyPrice+" to "+buyingOffers.get(0).getID()+"\n");
 					break;
 				}
 
@@ -70,9 +70,9 @@ public class IOC implements ITypeExecutor {
 	}
 
 	@Override
-	public void buyingExecute(PrintWriter out, BuyingOffer offer, List<SellingOffer> sellingOffers, List<BuyingOffer> buyingOffers,String symbol) {
+	public void buyingExecute(MyLogger logger, BuyingOffer offer, List<SellingOffer> sellingOffers, List<BuyingOffer> buyingOffers,String symbol) {
 		if(sellingOffers.isEmpty()){
-			out.println("Order is declined");
+			logger.info("Order is declined");
 			return;
 		}
 		Long count = offer.getQuantity();
@@ -82,7 +82,7 @@ public class IOC implements ITypeExecutor {
 			count -= sellingOffers.get(i).getQuantity();
 		}
 		if(count > 0){
-			out.println("Order is declined");
+			logger.info("Order is declined");
 			return;
 		}
 		else{
@@ -96,13 +96,13 @@ public class IOC implements ITypeExecutor {
 						sellingOffers.get(0).setQuantity("delete", buyQuantity);
 						//sellingOffers.set(0, sellingOffers.get(0));
 						StockMarket.changeCustomerProperty(sellingOffers.get(0), offer, buyPrice, buyQuantity, symbol);
-						out.println(sellingOffers.get(0).getID()+" sold "+buyQuantity+" shares of "+symbol+" @"+buyPrice+" to "+offer.getID()+"\n");
+						logger.info(sellingOffers.get(0).getID()+" sold "+buyQuantity+" shares of "+symbol+" @"+buyPrice+" to "+offer.getID()+"\n");
 						break;
 					}
 					else{
 						buyQuantity = sellingOffers.get(0).getQuantity();
 						StockMarket.changeCustomerProperty(sellingOffers.get(0), offer, buyPrice, buyQuantity, symbol);
-						out.println(sellingOffers.get(0).getID()+" sold "+buyQuantity+" shares of "+symbol+" @"+buyPrice+" to "+offer.getID()+"\n");
+						logger.info(sellingOffers.get(0).getID()+" sold "+buyQuantity+" shares of "+symbol+" @"+buyPrice+" to "+offer.getID()+"\n");
 						sellingOffers.remove(0);
 						offer.setQuantity("delete", buyQuantity);
 						//buyingOffers.set(0, offer);

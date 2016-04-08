@@ -14,10 +14,9 @@ public class Transaction extends MyHttpServlet  {
     @Override
     public void doMyPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String order = request.getParameter("order");
-        String id = request.getParameter("id");
-        if(order!=null && order.equals("خرید"))
+        if(order!=null && order.equals("sell"))
             BuyOrder.doPost(request,response);
-        else if(order!=null && order.equals("فروش"))
+        else if(order!=null && order.equals("buy"))
             SellOrder.doPost(request,response);
         else
             request.getRequestDispatcher("page-not-found.jsp").forward(request, response);
@@ -26,9 +25,9 @@ public class Transaction extends MyHttpServlet  {
     @Override
     public void doMyGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String order = request.getParameter("order");
-        if(order!=null && order.equals("خرید"))
+        if(order!=null && order.equals("sell"))
             BuyOrder.doGet(request,response);
-        else if(order!=null && order.equals("فروش"))
+        else if(order!=null && order.equals("buy"))
             SellOrder.doGet(request,response);
         else
             request.getRequestDispatcher("page-not-found.jsp").forward(request, response);

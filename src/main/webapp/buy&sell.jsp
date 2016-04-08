@@ -66,8 +66,8 @@
                                         <div class="form-row">
                                             <label>
                                                 <select name="order">
-                                                    <option>خرید</option>
-                                                    <option>فروش</option>
+                                                    <option value="buy">خرید</option>
+                                                    <option value="sell">فروش</option>
                                                 </select>
                                             </label>
                                         </div>

@@ -1,10 +1,23 @@
 package main.java.net.internetengineering.logger;
 
+import java.util.ArrayList;
+
 /**
  * Created by Hamed Ara on 2/20/2016.
  */
 public class MyLogger {
-    public static void info(String s){
-        System.out.println(s);
+    ArrayList<String> messages=null;
+
+    public MyLogger(ArrayList<String> messages) {
+        this.messages = messages;
+    }
+
+    public void info(String s){
+        messages.add(s);
+    }
+    public ArrayList<String> getAndFlushMyLogger(){
+        ArrayList<String> s =messages;
+        messages=null;
+        return s;
     }
 }
