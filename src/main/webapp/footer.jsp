@@ -15,7 +15,7 @@
        
         <div class="footer">
             <div>کلیه حقوق این سایت واس ماس</div>
-            <div class="qrCode"><img src="style/qrcode.jpg" /></div>
+            <div class="qrCode"><img src="/stockmarket/style/qrcode.jpg" /></div>
         </div>
     
 </body>

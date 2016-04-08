@@ -10,22 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fba5553-5e87-4dd5-b4e9-668a1610848b" name="Default" comment="Parisa's work is added to projects. Both Sell and Buy are in the same form and include in jsp is used.">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/save-poll-err.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/show-info.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/Instrument.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/Instrument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/types/GTC.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/types/GTC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/types/IOC.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/types/IOC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/types/ITypeExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/types/ITypeExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/types/MPO.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/types/MPO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/logger/MyLogger.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/logger/MyLogger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/AddCustomer.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/AddCustomer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/admin/requests/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/admin/requests/update.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/save-deposit-request.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/DepositHandler.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/DepositHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/Transaction.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/Transaction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/server/StockMarket.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/server/StockMarket.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/buy&amp;sell.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/buy&amp;sell.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/deposit.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/deposit.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/menu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/menu.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/style/myStyle.css" afterPath="$PROJECT_DIR$/src/main/webapp/style/myStyle.css" />
     </list>
     <ignored path="IECA5.iws" />
@@ -72,11 +64,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SellOrder.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SellOrder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7492625">
-              <caret line="35" column="81" selection-start-line="35" selection-start-column="81" selection-end-line="35" selection-end-column="81" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DepositHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/DepositHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.2339745">
+              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/AddCustomer.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/show-info.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/DepositHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/types/ITypeExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/Instrument.java" />
@@ -188,6 +191,7 @@
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/types/MPO.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/server/StockMarket.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/DepositHandler.java" />
       </list>
     </option>
   </component>
@@ -1115,7 +1119,7 @@
       <workItem from="1460020274560" duration="3728000" />
       <workItem from="1460024814521" duration="13015000" />
       <workItem from="1460060817144" duration="713000" />
-      <workItem from="1460103584206" duration="20021000" />
+      <workItem from="1460103584206" duration="20134000" />
     </task>
     <task id="LOCAL-00001" summary="Previous Project on JSP files">
       <created>1458676664431</created>
@@ -1145,7 +1149,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76060000" />
+    <option name="totallyTimeSpent" value="76173000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1158,7 +1162,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1240,7 +1244,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/internetengineering/server/StockMarket.java</url>
-          <line>47</line>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -1252,13 +1256,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/internetengineering/server/StockMarket.java</url>
-          <line>73</line>
+          <line>92</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/internetengineering/server/StockMarket.java</url>
-          <line>94</line>
+          <line>113</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -1664,16 +1668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/DepositHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="76" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/types/ITypeExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40117994">
@@ -1736,8 +1730,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7492625">
-          <caret line="35" column="81" selection-start-line="35" selection-start-column="81" selection-end-line="35" selection-end-column="81" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/DepositHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2339745">
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

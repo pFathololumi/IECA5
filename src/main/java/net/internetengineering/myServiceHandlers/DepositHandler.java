@@ -30,6 +30,7 @@ public class DepositHandler extends MyHttpServlet{
 				throw new DataIllegalException("Unknown user id");
 			}
 			request.setAttribute("successes", logger.getAndFlushMyLogger());
+			StockMarket.getInstance().getDepositRequests().remove(id);
 		}catch (DataIllegalException ex){
 			logger.info(ex.getMessage());
 			request.setAttribute("errors", logger.getAndFlushMyLogger());
@@ -38,8 +39,8 @@ public class DepositHandler extends MyHttpServlet{
 			request.setAttribute("errors", logger.getAndFlushMyLogger());
 		}
 		request.getRequestDispatcher("show-info.jsp").forward(request, response);
+		
 	}
-	
 
 	public void doMyGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         doMyPost(request,response);
