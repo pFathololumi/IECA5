@@ -39,7 +39,7 @@ public class DepositHandler extends MyHttpServlet{
 			request.setAttribute("errors", logger.getAndFlushMyLogger());
 		}
 		request.getRequestDispatcher("show-info.jsp").forward(request, response);
-		
+
 	}
 
 	public void doMyGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{

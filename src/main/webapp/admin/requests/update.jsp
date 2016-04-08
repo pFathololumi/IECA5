@@ -27,7 +27,7 @@
    
 <%
     StockMarket s = StockMarket.getInstance();
-    StockMarket.getDepositRequests().remove(request.getParameter("id"));
+    StockMarket.getInstance().getDepositRequests().remove(request.getParameter("id"));
 %>
 
 	 <jsp:forward page="index.jsp">
