@@ -42,18 +42,18 @@
                                     </div>
                                 </div>
                                 <div class="form-bottom">
-                                    <form role="form" class="registration-form" action="selectBuyOrSell.jsp" method="post">
+                                    <form role="form" class="registration-form" action="/stockmarket/add" method="post">
                                         <div class="form-group">
                                             <label class="sr-only">شناسه کاربری</label>
                                             <input type="text" name="id" placeholder="...شناسه کاربری" class="form-control">
                                         </div>
                                         <div class="form-group">
                                             <label class="sr-only">نام</label>
-                                            <input type="text" name="instrument" placeholder="...نام" class="form-control">
+                                            <input type="text" name="name" placeholder="...نام" class="form-control">
                                         </div>
                                         <div class="form-group">
                                             <label class="sr-only">نام خانوادگی</label>
-                                            <input type="text" name="price" placeholder="...نام خانوادگی" class="form-control">
+                                            <input type="text" name="family" placeholder="...نام خانوادگی" class="form-control">
                                         </div>
                                         
                                         <button type="submit" class="btn">ارسال درخواست</button>
