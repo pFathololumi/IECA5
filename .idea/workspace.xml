@@ -10,10 +10,135 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fba5553-5e87-4dd5-b4e9-668a1610848b" name="Default" comment="Parisa's work is added to projects. Both Sell and Buy are in the same form and include in jsp is used.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/Transaction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/Account.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/Customer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/Transaction.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/BuyingOffer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/Instrument$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/Instrument.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/Offering.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/SellingOffer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/TransactionType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/types/GTC.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/types/IOC.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/types/ITypeExecutor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/domain/dealing/types/MPO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/exception/DataIllegalException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/logger/CSVFileWriter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/logger/MyLogger.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/myServiceHandlers/BuyOrder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/myServiceHandlers/MyHttpServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/myServiceHandlers/SellOrder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/myServiceHandlers/Transaction.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/net/internetengineering/server/StockMarket.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/Account.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/Customer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/Transaction.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/BuyingOffer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/Instrument$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/Instrument.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/Offering.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/SellingOffer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/TransactionType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/types/GTC.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/types/IOC.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/types/ITypeExecutor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/domain/dealing/types/MPO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/exception/DataIllegalException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/logger/CSVFileWriter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/logger/MyLogger.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/myServiceHandlers/BuyOrder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/myServiceHandlers/MyHttpServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/myServiceHandlers/SellOrder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/myServiceHandlers/Transaction.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/classes/main/java/net/internetengineering/server/StockMarket.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/BBardiya.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/BBardiya.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/BBardiya.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/image1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/image2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/qrcode.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/symbol/aftabe.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/symbol/irankhodro.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/symbol/saipa.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/symbol/sepahan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/symbol/tractor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/addUser.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/buy&amp;sell.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/buy.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/deposit.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/examples.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/animated.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_animated.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/fonts/font-awesome/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/footer.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/form-elements.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/form/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/header.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/menu.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/page-not-found.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/queues.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/save-poll-err.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/selectBuyOrSell.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stockmarket/style/myStyle.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/Instrument.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/Instrument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/buy&amp;sell.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/buy&amp;sell.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/Transaction.java" afterPath="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/Transaction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/page-not-found.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/page-not-found.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/queues.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/queues.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/style/myStyle.css" afterPath="$PROJECT_DIR$/src/main/webapp/style/myStyle.css" />
     </list>
     <ignored path="IECA5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,58 +164,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuyOrder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="buy&amp;sell.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/buy&amp;sell.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.769231">
-              <caret line="68" column="59" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SellOrder.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23303835">
-              <caret line="13" column="44" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/Transaction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="StockMarket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/server/StockMarket.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,9 +171,27 @@
               <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4366#4367#0" expanded="true" />
-                <element signature="e#4406#4407#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Instrument.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/Instrument.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-not-found.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page-not-found.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,22 +208,68 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Instrument.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/Instrument.java">
+      <file leaf-file-name="SellOrder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5185184">
-              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/Transaction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.14749263">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queues.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/queues.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="8.230769">
+              <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GTC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/types/GTC.java">
+      <file leaf-file-name="buy&amp;sell.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/buy&amp;sell.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-27.461538">
+              <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myStyle.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/style/myStyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.1538463">
+              <caret line="196" column="26" selection-start-line="196" selection-start-column="26" selection-end-line="196" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyHttpServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/MyHttpServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="107" selection-start-line="28" selection-start-column="107" selection-end-line="28" selection-end-column="107" />
-              <folding />
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,11 +319,9 @@
         <option value="$PROJECT_DIR$/src/test/java/ir/ramtung/polling/PollTest.java" />
         <option value="$PROJECT_DIR$/src/index.jsp" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page-not-found.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/queues.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/form/style.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/queues.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/logger/CSVFileWriter.java" />
@@ -196,10 +331,15 @@
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/types/IOC.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/MyHttpServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/Instrument.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/buy&amp;sell.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/style/myStyle.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page-not-found.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/queues.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/Transaction.java" />
       </list>
     </option>
   </component>
@@ -287,6 +427,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IECA5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IECA5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IECA5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IECA5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -963,7 +1151,7 @@
       <workItem from="1460020274560" duration="3728000" />
       <workItem from="1460024814521" duration="13015000" />
       <workItem from="1460060817144" duration="713000" />
-      <workItem from="1460103584206" duration="7194000" />
+      <workItem from="1460103584206" duration="11948000" />
     </task>
     <task id="LOCAL-00001" summary="Previous Project on JSP files">
       <created>1458676664431</created>
@@ -993,7 +1181,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63233000" />
+    <option name="totallyTimeSpent" value="67987000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1006,7 +1194,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1021,14 +1209,14 @@
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22692889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22692889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1088,12 +1276,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java</url>
-          <line>15</line>
+          <line>14</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java</url>
-          <line>15</line>
+          <line>14</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -1139,8 +1327,20 @@
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/Transaction.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/Transaction.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1149,14 +1349,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1173,8 +1365,6 @@
           <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4366#4367#0" expanded="true" />
-            <element signature="e#4406#4407#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1222,8 +1412,6 @@
           <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4366#4367#0" expanded="true" />
-            <element signature="e#4406#4407#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1354,22 +1542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page-not-found.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/footer.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1416,22 +1588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/queues.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7050562">
-          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1508,14 +1664,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/style/myStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.1538463">
+          <caret line="196" column="26" selection-start-line="196" selection-start-column="26" selection-end-line="196" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/server/StockMarket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4366#4367#0" expanded="true" />
-            <element signature="e#4406#4407#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1532,32 +1718,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/domain/dealing/Instrument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5185184">
+        <state vertical-scroll-proportion="0.0">
           <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/BuyOrder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page-not-found.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/queues.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.230769">
+          <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/buy&amp;sell.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.769231">
-          <caret line="68" column="59" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
+        <state vertical-scroll-proportion="-27.461538">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/MyHttpServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.050147492">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1566,16 +1770,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/internetengineering/myServiceHandlers/SellOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23303835">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.14749263">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

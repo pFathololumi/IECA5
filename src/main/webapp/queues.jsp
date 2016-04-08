@@ -28,7 +28,6 @@
 	<jsp:include page="/header.jsp" />
 <%
     StockMarket s = StockMarket.getInstance();
-    s.initializeInstruments();
         for(Instrument ins : s.getInstruments()){
 %>
     <div class="right-to-left width-percent">

@@ -20,6 +20,7 @@
 
 	<jsp:include page="/menu.jsp" />
 	<jsp:include page="/header.jsp" />
+    <div id="stuffer">به سایت خرید و فروش سهام خوش آمدید.</div>
 	<jsp:include page="/footer.jsp" />
     
 </body>

@@ -5,14 +5,13 @@ import main.java.net.internetengineering.exception.DataIllegalException;
 import main.java.net.internetengineering.server.StockMarket;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/sell")
-public class SellOrder extends MyHttpServlet {
-    public void doMyPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+public class SellOrder {
+    public static void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
         String instrument = request.getParameter("instrument");
         String type = request.getParameter("type");
@@ -36,7 +35,7 @@ public class SellOrder extends MyHttpServlet {
         StockMarket.getInstance().executeSellingOffer(out, sellingOffer, instrument);
     }
 
-    public void doMyGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-        doMyPost(request,response);
+    public static void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        doPost(request,response);
     }
 }

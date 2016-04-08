@@ -20,7 +20,7 @@
 
 <jsp:include page="/menu.jsp" />
 <jsp:include page="/header.jsp" />
-<div>صفحه مورد نظر موجود نیست و یا درخواست ارسالی معتبر نمی باشد.</div>
+<div id="stuffer">صفحه مورد نظر موجود نیست و یا درخواست ارسالی معتبر نمی باشد.</div>
 <jsp:include page="/footer.jsp" />
 
 </body>

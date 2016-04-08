@@ -194,5 +194,12 @@ li{
     position: relative;
     display: block;
     padding: 1%;
+    font-family: BBardiya;
+}
 
+#stuffer {
+    height: 350px;
+    font-size: 40px;
+    margin: 10%;
+    font-family: BBardiya;
 }
