@@ -11,8 +11,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @WebServlet("/buy")
-public class BuyOrder extends HttpServlet{
-	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+public class BuyOrder extends MyHttpServlet{
+	public void doMyPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String id = request.getParameter("id");
 		String instrument = request.getParameter("instrument");
 		String type = request.getParameter("type");
@@ -35,8 +35,8 @@ public class BuyOrder extends HttpServlet{
 		StockMarket.getInstance().executeBuyingOffer(out,buyingOffer,instrument);
 	}
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doPost(request,response);
+	public void doMyGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doMyPost(request,response);
 	}
 
 }
